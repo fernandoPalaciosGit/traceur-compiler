@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <script src="../../bin/traceur.js"></script>
+    <script>
+      $traceurRuntime.options.experimental = true;
+      System.transpiler = 'babel';
+    </script>
+    <script src="../../src/bootstrap.js"></script>
+  </head>
+  <body>
+  <h1><a href="http://javascriptplayground.com/blog/2014/07/introduction-to-es6-classes-tutorial/">ES6 classes</a></h1>
+    <ul>
+        <li>run command : <code>npm expressServer.js</code></li>
+        <li>express server : http://localhost:8099/apps/micro-framework/test.html</li>
+    </ul>
+
+    <script type="module">
+(function(){
+      // loads modules from url, in the same path as the page 
+      import { ViewFW } from './prototypes/view-framework.js';
+      import { ModelFW } from './prototypes/model-framework.js';
+    
+}());
+    </script>
+  </body>
+</html>
